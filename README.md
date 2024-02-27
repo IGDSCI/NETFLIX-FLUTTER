@@ -1,16 +1,9 @@
-# netflix
+# Netflix
 
-A new Flutter project.
+## Desenvolvi este projeto pessoal com o objetivo de consolidar os conhecimentos adquiridos em videoaulas de Flutter. Escolhi o site a Netflix para aprender coisas diferentes
 
-## Getting Started
+# Imagens da aplicação
 
-This project is a starting point for a Flutter application.
+![image](https://github.com/IGDSCI/NETFLIX-FLUTTER/assets/114839208/d0f7062d-f87a-4c6e-b032-c7dc01ff2401)
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
