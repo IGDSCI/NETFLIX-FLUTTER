@@ -111,9 +111,7 @@ class _LoginStfState extends State<LoginStf> {
                           child: SizedBox(
                             width: 350,
                             child: ElevatedButton(
-                              onPressed: (){
-                                Navigator.of(context).pushReplacementNamed('/cadastro');
-                              }, 
+                              onPressed: (){}, 
                               style: ElevatedButton.styleFrom(
                                 backgroundColor: Colors.red,
                                 shape: ContinuousRectangleBorder(
@@ -171,7 +169,9 @@ class _LoginStfState extends State<LoginStf> {
                               Padding(
                                 padding: const EdgeInsets.only(left: 4),
                                 child: GestureDetector(
-                                  onTap: (){},
+                                  onTap: (){
+                                    Navigator.of(context).pushReplacementNamed('/cadastro');
+                                  },
                                   child: MouseRegion(
                                     cursor: SystemMouseCursors.click,
                                     child: Text(
