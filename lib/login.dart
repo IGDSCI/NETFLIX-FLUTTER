@@ -1,24 +1,28 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
+// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, sized_box_for_whitespace
 
 import 'package:flutter/material.dart';
+import 'package:netflix/cadastro.dart';
 
 class LoginStl extends StatelessWidget {
   const LoginStl({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      routes: {
+        '/cadastro' : (context) => CadastroStl(),
+      },
       home: LoginStf(),
     );
   }
 }
 
+
 class LoginStf extends StatefulWidget {
   const LoginStf({Key? key}) : super(key: key);
-
   @override
   State<LoginStf> createState() => _LoginStfState();
 }
+
 
 class _LoginStfState extends State<LoginStf> {
   bool status = false;
@@ -107,7 +111,9 @@ class _LoginStfState extends State<LoginStf> {
                           child: SizedBox(
                             width: 350,
                             child: ElevatedButton(
-                              onPressed: (){}, 
+                              onPressed: (){
+                                Navigator.of(context).pushReplacementNamed('/cadastro');
+                              }, 
                               style: ElevatedButton.styleFrom(
                                 backgroundColor: Colors.red,
                                 shape: ContinuousRectangleBorder(
