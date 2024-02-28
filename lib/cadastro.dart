@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sort_child_properties_last
 
 import 'package:flutter/material.dart';
-import 'package:netflix/escolha_plano.dart';
+import 'package:netflix/aviso_plano.dart';
 
 class CadastroStl extends StatelessWidget {
   const CadastroStl({super.key});
@@ -10,7 +10,7 @@ class CadastroStl extends StatelessWidget {
     return MaterialApp(
       home: CadastroStf(),
       routes: {
-        '/escolha_plano' : (context) => EscolhaPlanoStl(),
+        '/escolha_plano' : (context) => AvisoPlanoStl(),
       },
     );
   }
