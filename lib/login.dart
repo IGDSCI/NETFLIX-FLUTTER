@@ -110,6 +110,7 @@ class _LoginStfState extends State<LoginStf> {
                           padding: const EdgeInsets.only(top: 15),
                           child: SizedBox(
                             width: 350,
+                            height: 50,
                             child: ElevatedButton(
                               onPressed: (){}, 
                               style: ElevatedButton.styleFrom(
@@ -129,20 +130,7 @@ class _LoginStfState extends State<LoginStf> {
                         ),
 
                         Padding(
-                          padding: const EdgeInsets.only(top: 20),
-                          child: MouseRegion(
-                            cursor: SystemMouseCursors.click,
-                            child: Center(
-                              child: Text(
-                                'Esqueceu a senha?',
-                                style: TextStyle(color: Colors.white, fontSize: 16),
-                              ),
-                            ),
-                          ),
-                        ),
-
-                        Padding(
-                          padding: const EdgeInsets.only(top: 100),
+                          padding: const EdgeInsets.only(top: 15),
                           child: Row(children: [
                             Checkbox(
                               value: status, 
@@ -158,7 +146,18 @@ class _LoginStfState extends State<LoginStf> {
                         ),
 
                         Padding(
-                          padding: const EdgeInsets.only(top: 20, left: 6),
+                          padding: const EdgeInsets.only(top: 100),
+                          child: MouseRegion(
+                            cursor: SystemMouseCursors.click,
+                            child: Text(
+                              'Esqueceu a senha?',
+                              style: TextStyle(color: Colors.white, fontSize: 16),
+                            ),
+                          ),
+                        ),
+
+                        Padding(
+                          padding: const EdgeInsets.only(top: 20),
                           child: Row(
                             children: [
                               Text(
